@@ -13,9 +13,10 @@ pool:
 
 steps:
 - script: |
-    echo $(Build.SourceBranch)
-    echo $(Build.SourceBranchName)
-    echo $(System.PullRequest.PullRequestId)
-    echo $(System.PullRequest.PullRequestNumber)
-    echo $(System.PullRequest.SourceBranch)
-  displayName: Echo vars  echo $(System.PullRequest.TargetBranch)
+    echo "$(Build.SourceBranch)"
+    echo "$(Build.SourceBranchName)"
+    echo "$(System.PullRequest.PullRequestId)"
+    echo "$(System.PullRequest.PullRequestNumber)"
+    echo "$(System.PullRequest.SourceBranch)"
+    echo "$(System.PullRequest.TargetBranch)"
+  displayName: Echo vars

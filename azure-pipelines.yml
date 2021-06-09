@@ -13,6 +13,7 @@ pool:
 
 steps:
 - script: |
+    env
     echo "SourceBranch: $(Build.SourceBranch)"
     echo "SourceBranchName: $(Build.SourceBranchName)"
     echo "- Pull Request info -"
